@@ -30,7 +30,7 @@ public abstract class IdeafoundryOccasionIntegrationOrderHeaderProcessorApplicat
 
 	@SpringBootTest()
     public static class HeaderProcessorTests extends IdeafoundryOccasionIntegrationOrderHeaderProcessorApplicationTests {
-
+	    @Ignore
 	    @Test
         public void testWiring() throws IOException {
             File orderJsonFile = getClassPathResource("modified-occasion-order.json").getFile();
